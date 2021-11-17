@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     QString newFileName = "/home/berke/Desktop/abcde.txt";
     QString append = "ekleme";
     FileProcess fileObj(filename);
-    //qInstallMessageHandler((fileObj.exceptionHandler.MessageHandler));
+    //qInstallMessageHandler((fileObj.exceptionHandler.MessageHandler)); //otomatik log
     fileObj.writeFile(text);
     fileObj.readFile();
     fileObj.appendFile(append);
